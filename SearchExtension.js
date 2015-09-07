@@ -9,7 +9,7 @@
 	};
 	
 	ext.search = function(item, number, menu, callback) {
-		$.get("http://crossorigin.me/http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=" + item + "&rsz=1&start=" + number, {}, function(data){
+		$.get("http://crossorigin.me/http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=" + item + "&rsz=1&start=" + number + "&safe=active", {}, function(data){
 			if(menu == "Title"){
 				callback(data['responseData']['results'][0]['titleNoFormatting']);
 			}else if(menu == "URL"){
