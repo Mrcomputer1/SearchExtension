@@ -1,6 +1,6 @@
 (function(ext){
 	
-	ext.version = "v1.0";
+	ext.version = "v1.0.1";
 	
 	ext._shutdown = function() {};
 	
@@ -29,7 +29,7 @@
 		menus: {
 			item: ["Title", "URL", "Content"]
 		},
-		url: 'http://mrcomputer1.github.io/SearchExtension/'
+		url: 'http://mrcomputer1extensions.github.io/SearchExtension/'
 	};
 	ScratchExtensions.register('Search Extension', blocksMenusURL, ext);
 })({});
